@@ -122,10 +122,7 @@ void get_data(int i)        //Function for receiving data from user and populati
   cout<<"Enter student roll number in  format(1XXX): "<< endl;
   cin>>rec[i].rollno;
   cout<<"Enter student name: ";
-  //getline(cin,rec[i].name);
-  cin.getline(rec[i].name,sizeof(rec[i].name));
-  //std::getline(std::cin, rec[i].name);
-  //cin>>rec[i].name;
+  cin>>rec[i].name;
   cout<<"Enter student's Father name: "<<endl;
   cin>>rec[i].fname;
   cout<<"Enter student's cell phone number: "<<endl;
